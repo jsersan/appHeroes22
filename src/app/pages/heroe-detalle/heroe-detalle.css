@@ -1,0 +1,6 @@
+.panel-imagen { min-height: 340px; background: #e9ecef; }
+.panel-imagen.marvel { background: linear-gradient(160deg, #b71c1c, #ef5350); }
+.panel-imagen.dc { background: linear-gradient(160deg, #0d47a1, #42a5f5); }
+
+.heroe-img { max-height: 320px; filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.35)); }
+.img-logo { height: 44px; width: auto; flex-shrink: 0; }

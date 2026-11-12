@@ -1,0 +1,16 @@
+<h1>Buscando a <small class="text-body-secondary">{{ termino() }}</small></h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @for (heroe of heroes(); track heroe.idx) {
+        <div class="col">
+            <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx!" />
+        </div>
+    } @empty {
+        <div class="col-12">
+            <div class="alert alert-info" role="alert">
+                No existen resultados con el término {{ termino() }}
+            </div>
+        </div>
+    }
+</div>

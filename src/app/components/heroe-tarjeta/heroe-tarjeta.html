@@ -1,0 +1,14 @@
+<div class="card h-100 animated fadeIn fast">
+  <img [src]="heroe().img" class="card-img-top img-fluid" [alt]="heroe().nombre">
+
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">{{ heroe().nombre }}</h5>
+    <p class="card-text">{{ heroe().bio }}</p>
+    <p class="card-text"><small class="text-muted">{{ heroe().aparicion }}</small></p>
+
+    <button (click)="verHeroe()" type="button"
+            class="btn btn-outline-primary w-100 mt-auto">
+      Ver más...
+    </button>
+  </div>
+</div>
